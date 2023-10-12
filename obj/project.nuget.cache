@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ze2Pp+FmGLZFTwLEpXCqKC52HEnYQ7mQxaxs68mkUQSXI3skn7OD4wfHSvomwxirCQD2jpBjt48Hut0hK3tn2g==",
+  "dgSpecHash": "D3/UGNNYlXDRv4VgPSNFz440Hf+njEpX173nQ/RUNY4nME7UNZXsUN/yDTaC3qelc6bjblSCvWoYLln9MDxI4A==",
   "success": true,
   "projectFilePath": "c:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\miner\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

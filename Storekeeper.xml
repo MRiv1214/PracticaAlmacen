@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStoreKeeper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StoreKeeper>
+    <SKID>1</SKID>
+    <SKName>Alberto Vidarte</SKName>
+    <SKPassword>177DACB14B34103960EC27BA29BD686B</SKPassword>
+  </StoreKeeper>
+  <StoreKeeper>
+    <SKID>2</SKID>
+    <SKName>Minerva</SKName>
+    <SKPassword>DFA410A0FBAC3A2E5983192B73B03F3F</SKPassword>
+  </StoreKeeper>
+</ArrayOfStoreKeeper>

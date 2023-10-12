@@ -12,3 +12,6 @@ C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\
 C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\PracticaAlmacen\obj\Debug\net7.0\PracticaAlmacen.pdb
 C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\PracticaAlmacen\obj\Debug\net7.0\PracticaAlmacen.genruntimeconfig.cache
 C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\PracticaAlmacen\obj\Debug\net7.0\ref\PracticaAlmacen.dll
+C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\PracticaAlmacen\obj\Debug\net7.0\PracticaAlmacen.csproj.AssemblyReference.cache
+C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\PracticaAlmacen\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\miner\Documents\Ceti\7\Progra avanzada\SEGUNDO INTENTO\Segundo parcial\PracticaAlmacen\obj\Debug\net7.0\PracticaAlmacen.csproj.CopyComplete
