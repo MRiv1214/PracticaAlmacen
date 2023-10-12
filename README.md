@@ -1,2 +1,3 @@
 # PracticaAlmacen
 NO SEA CHISMOSO
+LEA EL CODGIOOOO
