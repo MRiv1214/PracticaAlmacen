@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj": {}
+    "C:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj": {}
   },
   "projects": {
-    "c:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj": {
+    "C:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj",
+        "projectUniqueName": "C:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj",
         "projectName": "PracticaAlmacen",
-        "projectPath": "c:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj",
+        "projectPath": "C:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\PracticaAlmacen.csproj",
         "packagesPath": "C:\\Users\\miner\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\obj\\",
+        "outputPath": "C:\\Users\\miner\\Documents\\Ceti\\7\\Progra avanzada\\SEGUNDO INTENTO\\Segundo parcial\\PracticaAlmacen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\miner\\AppData\\Roaming\\NuGet\\NuGet.Config"

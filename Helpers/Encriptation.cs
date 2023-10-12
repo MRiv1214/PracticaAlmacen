@@ -1,7 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
 
-
 public class Encriptation
 {
     public static string Encrypt(string password)

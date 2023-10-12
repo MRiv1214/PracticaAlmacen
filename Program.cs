@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Net;
 using Newtonsoft.Json;
 using System.Xml.Serialization;
+using System.IO;
+using System.Text;
 
 public class Program
 {
@@ -88,20 +90,22 @@ public class Program
     static void DeleteTeacher()
     {
         Write("ID of the teacher to delete: ");
-        int ID = Convert.ToInt32(ReadLine());
-        Teacher teacherToDelete = TeachersList.FirstOrDefault(teacher => teacher.TeacherID == ID);
-        if(teacherToDelete != null)
+        int ID = int.Parse(Console.ReadLine());
+        Teacher teacherToDelete = TeachersList.Find(teacher => teacher.TeacherID == ID);
+        
+        if (teacherToDelete != null) // Verificamos que el ID sea válido
         {
             TeachersList.Remove(teacherToDelete);
-            SerializeTeacherToXml();
             SerializeTeacherJSON();
-            WriteLine("Teacher deleted successfully"); 
-        } else
+            SerializeTeacherToXml();
+            WriteLine("Teacher deleted successfully");
+        }
+        else
         {
-            WriteLine("Teacher not found");
+        WriteLine("Invalid ID");
         }
     }
-
+    
     #endregion
 
     #region Storekeepers
@@ -220,6 +224,18 @@ public class Program
         string TeacherJson = JsonConvert.SerializeObject(TeachersList);
         File.WriteAllText("Teachers.json", TeacherJson);
     }
+
+    static void SerializeTeacherToXml()
+    {
+        XmlSerializer Teacherserializer = new XmlSerializer(typeof(List<Teacher>));
+        using (FileStream fileStream = File.Create("Teachers.xml"))
+        using (StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8))
+        {
+            Teacherserializer.Serialize(streamWriter, TeachersList);
+        }
+
+    }
+
     static void DeserializeTeacherJSON()
     {
         if(File.Exists("Teachers.json"))
@@ -232,31 +248,20 @@ public class Program
             WriteLine("No teachers found");
         }
     }
-
-    static void SerializeTeacherToXml()
+    static void DeserializeTeacherXML()
     {
-        XmlSerializer Teacherserializer = new XmlSerializer(typeof(List<Teacher>));
-        using (FileStream fileStream = File.OpenWrite("Teachers.xml"))
-        {
-            Teacherserializer.Serialize(fileStream, TeachersList.DistinctBy(teacher => teacher.TeacherID).ToList());
-        }
-    }
-
-    static void DeserializeTeachersXml()
-    {
-        if (File.Exists("Teachers.xml"))
+        if(File.Exists("Teachers.xml"))
         {
             XmlSerializer Teacherserializer = new XmlSerializer(typeof(List<Teacher>));
             using (FileStream fileStream = File.OpenRead("Teachers.xml"))
             {
                 TeachersList = (List<Teacher>)Teacherserializer.Deserialize(fileStream);
             }
-        }
-        else
+        } else
         {
             TeachersList = new List<Teacher>(); // Initialize TeachersList to an empty list
-            WriteLine("No teachers data file found.");
-        }   
+            WriteLine("No teachers found");
+        }
     }
     #endregion
 
@@ -317,8 +322,8 @@ public class Program
     static void Main()
     {
         DeserializeTeacherJSON();
+        DeserializeTeacherXML();
         DeserializeStorekeeperJSON();
-        //DeserializeTeachersXml();
         DeserializeStorekeeperXML();
         Clear();
         WriteLine("\nWelcome to the Store Management System!");
@@ -350,10 +355,6 @@ public class Program
                         break;
                 }
             } 
-            else
-            {
-                WriteLine($"Logged in as {currentStorekeeper.SKName}");
-            }
             if (currentStorekeeper != null) 
             {
                 WriteLine("\nMenu:");

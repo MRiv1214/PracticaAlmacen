@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfTeacher xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Teacher>
-    <TeacherID>3</TeacherID>
-    <Name>Jordo</Name>
-    <Payroll>4A8A08F09D37B73795649038408B5F33</Payroll>
-    <Password>4A8A08F09D37B73795649038408B5F33</Password>
-    <Subject>
-      <string>c</string>
-    </Subject>
-    <Division>c</Division>
-    <Classes />
-  </Teacher>
-</ArrayOfTeacher>TeacherID>3</TeacherID>
-    <Name>Jordo</Name>
-    <Payroll>4A8A08F09D37B73795649038408B5F33</Payroll>
-    <Password>4A8A08F09D37B73795649038408B5F33</Password>
-    <Subject>
-      <string>c</string>
-    </Subject>
-    <Division>c</Division>
-    <Classes />
-  </Teacher>
-</ArrayOfTeacher>
-```
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTeacher xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
